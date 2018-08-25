@@ -4,7 +4,7 @@ export default class Events {
     const repo = data.repository.full_name;
     const commit = data.comment.commit_id.substring(0, 7);
     const user = data.comment.user.login;
-    message += `[**${repo} _${commit}_**]SDS  ${user}`;
+    message += `[**${repo} _${commit}_**]New comment  ${user}`;
     message += `\n${data.comment.body}`;
     return message;
   }
